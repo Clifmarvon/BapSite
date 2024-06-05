@@ -1,7 +1,5 @@
 .about {
-  display: flex;
-  justify-content: center;
-align-items: center;
+
 .head-top{
   margin-top: 4rem;
 }
@@ -60,5 +58,14 @@ align-items: center;
 }
 
 @media screen and (max-width:412px) {
-  
+  .about {
+    display: flex;
+
+    justify-content: center;
+
+    .about-container {
+
+     height: 100%;
+
 }
+  }}
