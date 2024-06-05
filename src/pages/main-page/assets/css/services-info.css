@@ -1,11 +1,14 @@
 .services-info {
   background-color: var(--bg1);
 
-
+ 
   .items {
     display: flex;
     width: 90%;
-    justify-content: space-between;
+
+
+    align-items: center;
+    justify-content: center;
     margin-top: 2rem;
     flex-wrap: wrap;
 
