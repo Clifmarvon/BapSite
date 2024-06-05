@@ -1,0 +1,54 @@
+.sermon {
+  background-color: var(--bg1);
+  .bottom{
+    margin-top: 2rem;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    color: var(--accent);
+    cursor: pointer;
+    p:hover{
+      text-decoration: underline;
+    }
+  }
+  .items {
+    margin-top: calc((80 / var(--height-layout)) * 100dvh);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    .sermon-item {
+      display: flex;
+      gap: 1rem;
+      contain: content;
+      height: calc((180 / var(--width-layout)) * 100dvw);
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        font-size: calc((12 / var(--width-layout)) * 100dvw);
+        > :first-child {
+          font-weight: bold;
+          font-size: calc((18 / var(--width-layout)) * 100dvw);
+        }
+        .options {
+          font-size: calc((12 / var(--width-layout)) * 100dvw);
+          position: relative;
+          bottom: 3%;
+          display: flex;
+          gap: 0.4rem;
+          :last-child {
+            color: var(--accent);
+          }
+        }
+        button {
+          width: 30%;
+        }
+      }
+    }
+  }
+ 
+}

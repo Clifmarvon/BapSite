@@ -1,0 +1,27 @@
+.header {
+  padding: 0;
+  overflow: hidden;
+
+  .slider-wrapper {
+    position: relative;
+    width: 100dvw;
+    height: calc((600 / var(--height-layout)) * 100dvh);
+
+    .slider {
+      display: flex;
+
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+
+      aspect-ratio: 13/9;
+      img {
+
+        object-fit: cover;
+      }
+    }
+    .slider::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+}
