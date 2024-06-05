@@ -10,7 +10,7 @@
   font-weight: 400;
   font-style: normal;
   p{
-    font-size: calc((12 / var(--width-layout)) * 100dvw);
+    font-size: .8rem;
   }
 
  
@@ -98,11 +98,11 @@ section {
     font-weight: 700;
     font-style: normal;
     text-transform: uppercase;
-    font-size: calc((25 / var(--width-layout)) * 100dvw);
+    font-size:25px;
   }
   :last-child {
     margin-top: 1rem;
-    font-size: calc((18 / var(--width-layout)) * 100dvw);
+    font-size: 14px;
     color: var(--disable);
   }
 }
@@ -121,6 +121,13 @@ section {
 @media screen and (max-width: 600px) {
   .container {
     width: var(--container-width-sm);
+  }
+
+
+}
+@media screen and (max-width: 830px) {
+  .container {
+    width: var(  --container-width-md);
   }
 
 
